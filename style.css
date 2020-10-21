@@ -1,0 +1,308 @@
+/* Usando alguma variáveis para facilitar o código */
+/* Utilizei 3 media queries mais básicas para ajustar a responsividade */
+/* Na função de avaliacao o texto e o nome do usuário preenche os campos respectivos na page */
+
+:root {
+    --button-color: #1fa54e;
+    --search-color: #e5e5e5;
+    --font-pattern-color: #595959;
+    --main-font: 'Montserrat', sans-serif;
+    --secondary-font: Arial, Helvetica, sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+header {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#logo {
+    width: 245px;
+    height: 65px;
+    background: url(./img/prova-frontend.png) -79px -38px;
+    position: relative;
+    left: 30px;
+}
+
+.header-right-side {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-right-side > p {
+    display: inline-block;
+    font-family: var(--main-font);
+    font-size: 0.7em;
+    margin-top: 23px;
+    margin-left: 5px;
+}
+
+.header-right-side > div > img {
+    margin: 17px 20px auto auto;
+}
+
+.header-right-side > #num-items-cart {
+    font-family: var(--main-font);
+    background-color: var(--button-color);
+    font-size: 0.6em;
+    color: #fff;
+    padding: 4px;
+    margin-top: 45px;
+    border-radius: 12px;
+    position: absolute;
+    top: -15px;
+    right: 44px;
+}
+
+#input {
+    background: url(./img/search.png) no-repeat right 10px center;
+    border-color: var(--search-color);
+    border-radius: 7px;
+    width: 240px;
+    padding: 5px;
+    font-size: 0.8em;
+    margin-top: 16px;
+}
+
+.strip {
+    background-color: var(--search-color);
+    font-family: var(--main-font);
+    font-size: 0.7em;
+    padding: 10px 34px;
+    margin: 20px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px;
+}
+
+main > div > .prod-image {
+    width: 460px;
+    height: 460px;
+    background: url(./img/prova-frontend.png) -132px -255px;
+    border: solid 1px black;
+    margin: 10px 10px auto auto;
+    float: right;
+}
+
+main > .prod-description {
+    padding: 10px;
+}
+
+main > .prod-description > h2 {
+    font-family: var(--main-font);
+    font-size: 1.8em;
+    font-weight: 800;
+}
+
+main > .prod-description > p {
+    font-family: var(--secondary-font);
+    font-size: 0.9em;
+    max-width: 500px;
+}
+
+main > .prod-description > p:nth-child(3) {
+    font-family: var(--main-font);
+    text-decoration: line-through;
+    color: var(--font-pattern-color);
+    margin: auto auto -5px 0;
+    padding-top: 10px;
+}
+
+main > .prod-description > #act-price {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 900;
+    font-size: 2.2em;
+    color: var(--button-color);
+    letter-spacing: -1px;
+    display: inline-block;
+}
+
+main > .prod-description > div:nth-child(5) {
+    font-family: var(--secondary-font);
+    font-size: 0.8em;
+    width: 100px;
+    position: relative;
+    top: -2px;
+    left: 5px;
+    display: inline-block;
+}
+
+main > .prod-description > div > ul li {
+    list-style: none;
+    display: inline;
+}
+
+main > .prod-description > div > ul {
+    margin-left: -38px;
+    display: inline-block;
+}
+
+main > .prod-description > div > .rate-now {
+    font-family: var(--secondary-font);
+    font-size: 0.8em;
+    text-decoration: underline;
+    display: inline-block;
+    position: relative;
+    top: -6px;
+    left: 10px;
+    cursor: alias;
+}
+
+main > .prod-description > .buy-button {
+    background-color: var(--button-color);
+    color: #FFF;
+    width: 200px;
+    text-align: center;
+    font-size: 1.3em;
+    padding: 12px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+main > .prod-description > h4 {
+    font-family: var(--secondary-font);
+    font-size: 0.8em;
+    position: relative;
+    top: 8px;
+}
+
+main > .prod-description > #opinion-text, #opinion-name {
+    font-family: var(--secondary-font);
+    color: var(--font-pattern-color);
+    font-size: 0.8em;
+}
+
+main > .prod-description > .eval > #eval-input > p {
+    font-family: var(--secondary-font);
+    background-color: var(--font-pattern-color);
+    color: var(--search-color);
+    text-align: center;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 8px;
+    width: 60px;
+    cursor: pointer;
+}
+
+.yellow-star-img, .grey-star-img {
+    width: 18px;
+    height: 20px;
+    background: url(./img/prova-frontend.png) -673px -486px;
+    display: inline-block;
+}
+
+.grey-star-img {
+    background: url(./img/prova-frontend.png) -753px -486px;
+}
+
+footer {
+    margin: 50px 20px;
+}
+
+footer > .text-prod {
+    height: 100px;
+    margin: 0 auto;
+}
+
+footer > .prod-info {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    width: 130px;
+    text-align: center;
+    padding: 12px;
+    display: inline-block;
+    margin-right: -1px;
+    cursor: pointer;
+}
+
+footer > #info-desc, #included-items, #info-warranty  {
+    font-family: var(--secondary-font);
+    font-size: 0.8em;
+}
+
+.prod-info-grey {
+    background-color: var(--search-color);
+    color: #595959;
+}
+
+.prod-info-black {
+    background-color: #000;
+    color: var(--search-color);
+}
+
+.d-block {
+    display: block;
+}
+
+.d-none {
+    display: none;
+}
+
+@media only screen and (max-width: 992px) {
+
+    #input {
+        width: 115px;
+    }
+
+    main > div > .prod-image {
+        width: 400px;
+        height: 400px;
+        background: url(./img/produto.png);
+        background-size: 100% 100%;
+    }
+}
+
+@media only screen and (max-width: 710px) {
+
+    header {
+        display: block;
+    }
+
+    main {
+        display: block;
+    }
+
+    #logo {
+        left: 0;
+        margin: 0 auto;
+    }
+
+    .header-right-side > #num-items-cart {
+        position: absolute;
+        top: 49px;
+        right: 44px;
+    }
+
+    main > div > .prod-image {
+        width: 350px;
+        height: 350px;
+        margin: 0 auto;
+        float: none;
+    }
+
+    main > .prod-description {
+        max-width: 360px;
+        text-align: justify;
+        margin: 0 auto;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    footer > .prod-info {
+        width: 100px;
+        font-size: 0.7em;
+    }
+
+    footer > .text-prod {
+        text-align: justify;
+    }
+}

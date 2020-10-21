@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>DevDog</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div id="logo"></div>
+            <div class="header-right-side">
+                <div>
+                    <input type="text" placeholder="Pesquisar" id="input">
+                </div>
+                <p><u>Entre</u> ou <u>cadastre-se</u></span></p>
+                <div>
+                    <img src="./img/cart.png" alt="">
+                </div>
+                <p id="num-items-cart">0</p>
+            </div>
+        </header>
+        <nav>
+            <div class="strip">HOME / CALÇADOS / PRODUTO ABC</div>
+        </nav>
+        <main>
+            <div>
+                <div class="prod-image"></div>
+            </div>
+            <div class="prod-description">
+                <h2 class="prod-name">Produto ABC</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type
+                specimen book. It has survived not only five centuries,
+                but also the leap into electronic typesetting, remaining essentially unchanged.
+                </p>
+                <p id="prev-price">199,00</p>
+                <span id="act-price">R$ 159,00</span>
+                <div>
+                    <span id="price-info">no boleto com <br /> 10% de desconto</span>
+                </div>
+                <div class="eval">
+                    <ul>
+                        <li><div class="yellow-star-img"></div></li>
+                        <li><div class="yellow-star-img"></div></li>
+                        <li><div class="yellow-star-img"></div></li>
+                        <li><div class="yellow-star-img"></div></li>
+                        <li><div class="grey-star-img"></div></li>
+                    </ul>
+                    <div id="rate-now" class="rate-now">
+                        <span>Avalie agora</span>
+                    </div>
+                    <div id="eval-input" class="d-none">
+                            <input type="text" placeholder="Nome" id="name-opinion">
+                            <br />
+                            <br />
+                            <textarea name="" id="textarea-opinion" cols="30" rows="5" 
+                            placeholder="Conte sua impressão sobre o produto"></textarea>
+                            <p id="submit-form">Enviar</p>
+                    </div>
+                </div>
+                <p id="buy-button" class="buy-button">COMPRAR</p>
+                <h4>Opinião</h4>
+                <p id="opinion-text">"Adorei o produto, vou comprar outro em breve."</p>
+                <p id="opinion-name"> -Alberto Guerra</p>
+            </div>
+        </main>
+        <footer>
+            <p id="desc-tab" class="prod-info prod-info-black">DESCRIÇÃO</p>
+            <p id="items-tab" class="prod-info prod-info-grey">ITENS INCLUSOS</p>
+            <p id="warranty-tab" class="prod-info prod-info-grey">GARANTIA</p>
+            <p id="info-desc" class="text-prod d-block">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+            when an unknown printer took a galley of type and scrambled it to make a type
+            specimen book. It has survived not only five centuries,
+            but also the leap into electronic typesetting, remaining essentially unchanged.
+            </p>
+            <p id="included-items" class="text-prod d-none">
+                - Cadarço
+            </p>
+            <p id="info-warranty" class="text-prod d-none"> Sessenta (60) dias a partir da compra</p>
+        </footer>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
